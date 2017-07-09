@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680006B01F125DAD00809486 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680006AE1F125DAD00809486 /* Interface.storyboard */; };
+		680006B21F125DAD00809486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680006B11F125DAD00809486 /* Assets.xcassets */; };
+		680006B91F125DAD00809486 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 680006B81F125DAD00809486 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		680006C01F125DAD00809486 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680006BF1F125DAD00809486 /* ExtensionDelegate.swift */; };
+		680006C21F125DAD00809486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680006C11F125DAD00809486 /* Assets.xcassets */; };
+		680006C61F125DAD00809486 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 680006AC1F125DAC00809486 /* Watch.app */; };
 		7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */; };
 		7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23E1B72275A00B1E765 /* ViewController.swift */; };
 		7B8FA2421B72275A00B1E765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8FA2401B72275A00B1E765 /* Main.storyboard */; };
@@ -18,13 +24,42 @@
 		7B8FA28D1B72893300B1E765 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA28A1B72893300B1E765 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		680006BA1F125DAD00809486 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B8FA2311B72275A00B1E765 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680006B71F125DAD00809486;
+			remoteInfo = "Watch Extension";
+		};
+		680006C41F125DAD00809486 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B8FA2311B72275A00B1E765 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680006AB1F125DAC00809486;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		680006CA1F125DAD00809486 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				680006B91F125DAD00809486 /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8FA2721B72277000B1E765 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				680006C61F125DAD00809486 /* Watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +67,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		680006AC1F125DAC00809486 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		680006AF1F125DAD00809486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		680006B11F125DAD00809486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680006B31F125DAD00809486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680006B81F125DAD00809486 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		680006BF1F125DAD00809486 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		680006C11F125DAD00809486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680006C31F125DAD00809486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B8FA2391B72275A00B1E765 /* AirAber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8FA23E1B72275A00B1E765 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +89,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		680006B51F125DAD00809486 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8FA2361B72275A00B1E765 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +106,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		680006AD1F125DAD00809486 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				680006AE1F125DAD00809486 /* Interface.storyboard */,
+				680006B11F125DAD00809486 /* Assets.xcassets */,
+				680006B31F125DAD00809486 /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		680006BC1F125DAD00809486 /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				680006BF1F125DAD00809486 /* ExtensionDelegate.swift */,
+				680006C11F125DAD00809486 /* Assets.xcassets */,
+				680006C31F125DAD00809486 /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
 		7B8FA2301B72275A00B1E765 = {
 			isa = PBXGroup;
 			children = (
 				7B8FA23B1B72275A00B1E765 /* AirAber */,
 				7B8FA27B1B724A7400B1E765 /* Shared */,
+				680006AD1F125DAD00809486 /* Watch */,
+				680006BC1F125DAD00809486 /* Watch Extension */,
 				7B8FA23A1B72275A00B1E765 /* Products */,
 			);
 			indentWidth = 2;
@@ -71,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				7B8FA2391B72275A00B1E765 /* AirAber.app */,
+				680006AC1F125DAC00809486 /* Watch.app */,
+				680006B81F125DAD00809486 /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +192,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		680006AB1F125DAC00809486 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680006CB1F125DAD00809486 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				680006AA1F125DAC00809486 /* Resources */,
+				680006CA1F125DAD00809486 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				680006BB1F125DAD00809486 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 680006AC1F125DAC00809486 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		680006B71F125DAD00809486 /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680006C71F125DAD00809486 /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				680006B41F125DAD00809486 /* Sources */,
+				680006B51F125DAD00809486 /* Frameworks */,
+				680006B61F125DAD00809486 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 680006B81F125DAD00809486 /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		7B8FA2381B72275A00B1E765 /* AirAber */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B8FA24B1B72275A00B1E765 /* Build configuration list for PBXNativeTarget "AirAber" */;
@@ -130,6 +238,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				680006C51F125DAD00809486 /* PBXTargetDependency */,
 			);
 			name = AirAber;
 			productName = AirAber;
@@ -142,9 +251,19 @@
 		7B8FA2311B72275A00B1E765 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Mic Pringle";
 				TargetAttributes = {
+					680006AB1F125DAC00809486 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5N8N3DL9JE;
+						ProvisioningStyle = Automatic;
+					};
+					680006B71F125DAD00809486 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					7B8FA2381B72275A00B1E765 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 5N8N3DL9JE;
@@ -166,11 +285,30 @@
 			projectRoot = "";
 			targets = (
 				7B8FA2381B72275A00B1E765 /* AirAber */,
+				680006AB1F125DAC00809486 /* Watch */,
+				680006B71F125DAD00809486 /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		680006AA1F125DAC00809486 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680006B21F125DAD00809486 /* Assets.xcassets in Resources */,
+				680006B01F125DAD00809486 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680006B61F125DAD00809486 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680006C21F125DAD00809486 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8FA2371B72275A00B1E765 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +323,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		680006B41F125DAD00809486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680006C01F125DAD00809486 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8FA2351B72275A00B1E765 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,7 +345,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		680006BB1F125DAD00809486 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680006B71F125DAD00809486 /* Watch Extension */;
+			targetProxy = 680006BA1F125DAD00809486 /* PBXContainerItemProxy */;
+		};
+		680006C51F125DAD00809486 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680006AB1F125DAC00809486 /* Watch */;
+			targetProxy = 680006C41F125DAD00809486 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		680006AE1F125DAD00809486 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680006AF1F125DAD00809486 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		7B8FA2401B72275A00B1E765 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -219,6 +386,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		680006C81F125DAD00809486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.AirAber.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		680006C91F125DAD00809486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.AirAber.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		680006CC1F125DAD00809486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 5N8N3DL9JE;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.AirAber.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		680006CD1F125DAD00809486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 5N8N3DL9JE;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.AirAber.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 		7B8FA2491B72275A00B1E765 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,6 +583,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		680006C71F125DAD00809486 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680006C81F125DAD00809486 /* Debug */,
+				680006C91F125DAD00809486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		680006CB1F125DAD00809486 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680006CC1F125DAD00809486 /* Debug */,
+				680006CD1F125DAD00809486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7B8FA2341B72275A00B1E765 /* Build configuration list for PBXProject "AirAber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
