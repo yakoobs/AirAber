@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="watch38" orientation="portrait">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYI-QS-oPw">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,5 +8,50 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Flight-->
+        <scene sceneID="d0P-zK-OJB">
+            <objects>
+                <controller identifier="Flight" hidesWhenLoading="NO" id="UYI-QS-oPw">
+                    <items>
+                        <group width="1" alignment="left" id="5Bk-al-Ebm">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="Logo" id="mRX-yi-9Yb">
+                                    <color key="tintColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="uTn-sw-ioJ">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="Xtv-NR-0ZM">
+                                            <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MEL to SFO" id="xpY-OF-ouS"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="8sH-GL-Q9h">
+                            <items>
+                                <label alignment="left" text="AA123 Boards" id="oEw-c8-dSc"/>
+                                <label height="44" alignment="left" text="15:06" id="bQ3-fk-QJ4">
+                                    <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="54"/>
+                                </label>
+                                <label alignment="left" text="On time" id="idL-K9-t2N">
+                                    <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <group width="1" alignment="left" id="IOU-Na-rqB">
+                                    <items>
+                                        <label alignment="left" text="Gate 1A" id="nRr-mm-FjN"/>
+                                        <label alignment="right" text="Seat 64A" id="aoe-Al-CEp"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-110" y="-26"/>
+        </scene>
+    </scenes>
 </document>
