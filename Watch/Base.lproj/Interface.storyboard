@@ -12,7 +12,7 @@
         <!--Flight-->
         <scene sceneID="d0P-zK-OJB">
             <objects>
-                <controller identifier="Flight" hidesWhenLoading="NO" id="UYI-QS-oPw">
+                <controller identifier="Flight" hidesWhenLoading="NO" id="UYI-QS-oPw" customClass="FlightInterfaceController" customModule="Watch_Extension">
                     <items>
                         <group width="1" alignment="left" id="5Bk-al-Ebm">
                             <items>
@@ -49,6 +49,15 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="boardTimeLabel" destination="bQ3-fk-QJ4" id="d3i-pe-7e5"/>
+                        <outlet property="boardingLabel" destination="oEw-c8-dSc" id="Ldh-jP-m2e"/>
+                        <outlet property="flightLabel" destination="Xtv-NR-0ZM" id="FKC-2t-64E"/>
+                        <outlet property="gateLabel" destination="nRr-mm-FjN" id="eiC-CZ-n6k"/>
+                        <outlet property="routeLabel" destination="xpY-OF-ouS" id="6Px-YT-OFf"/>
+                        <outlet property="seatLabel" destination="aoe-Al-CEp" id="kdb-qz-VXO"/>
+                        <outlet property="statusLabel" destination="idL-K9-t2N" id="aCj-To-8FR"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-110" y="-26"/>
