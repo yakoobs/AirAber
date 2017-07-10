@@ -11,7 +11,8 @@ import Foundation
 
 
 class ScheduleInterfaceController: WKInterfaceController {
-    @IBOutlet weak var flightsTable: WKInterfaceTable!
+    @IBOutlet var flightsTable: WKInterfaceTable!
+  
     var flights = Flight.allFlights()
   
   override func awake(withContext context: Any?) {
@@ -24,5 +25,11 @@ class ScheduleInterfaceController: WKInterfaceController {
       controller.flight = flight
     }
   }
+  
+  override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+    let flight = flights[rowIndex]
+    presentController(withName: "Flight", context: flight)
+  }
+  
   
 }

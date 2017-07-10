@@ -7,10 +7,9 @@
 //
 
 import WatchKit
-import Foundation
 
-
-class FlightRowController: WKInterfaceController {
+class FlightRowController: NSObject {
+  
   @IBOutlet var separator: WKInterfaceSeparator!
   @IBOutlet var originLabel: WKInterfaceLabel!
   @IBOutlet var destinationLabel: WKInterfaceLabel!
