@@ -65,7 +65,7 @@
         <!--CheckIn-->
         <scene sceneID="6uj-EE-7R0">
             <objects>
-                <controller identifier="CheckIn" id="go0-aL-yxs">
+                <controller identifier="CheckIn" id="go0-aL-yxs" customClass="CheckInInterfaceController" customModule="Watch_Extension">
                     <items>
                         <group width="1" height="1" alignment="center" contentMode="center" layout="vertical" id="gsP-F4-nm1">
                             <items>
@@ -91,10 +91,18 @@
                                         </items>
                                         <color key="backgroundColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
+                                    <connections>
+                                        <action selector="checkInButtonTapped" destination="go0-aL-yxs" id="gpm-fY-2HA"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="backgroundGroup" destination="gsP-F4-nm1" id="qRd-2h-sv7"/>
+                        <outlet property="destinationLabel" destination="cXy-Fy-jwI" id="iz2-av-X0c"/>
+                        <outlet property="originLabel" destination="eJC-CR-Uy6" id="Ybl-m2-saJ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-405" y="-302"/>
