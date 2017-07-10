@@ -16,6 +16,8 @@
 		680006CE1F12645100809486 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B8FA27C1B724A7400B1E765 /* Flights.json */; };
 		680006CF1F12646400809486 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA27F1B724A9900B1E765 /* Flight.swift */; };
 		680006D11F1370CD00809486 /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680006D01F1370CD00809486 /* FlightInterfaceController.swift */; };
+		6829C6561F13B0E700330912 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6829C6551F13B0E700330912 /* ScheduleInterfaceController.swift */; };
+		6829C6581F13B35D00330912 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6829C6571F13B35D00330912 /* FlightRowController.swift */; };
 		7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */; };
 		7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23E1B72275A00B1E765 /* ViewController.swift */; };
 		7B8FA2421B72275A00B1E765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8FA2401B72275A00B1E765 /* Main.storyboard */; };
@@ -79,6 +81,8 @@
 		680006C11F125DAD00809486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680006C31F125DAD00809486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680006D01F1370CD00809486 /* FlightInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInterfaceController.swift; sourceTree = "<group>"; };
+		6829C6551F13B0E700330912 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
+		6829C6571F13B35D00330912 /* FlightRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
 		7B8FA2391B72275A00B1E765 /* AirAber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8FA23E1B72275A00B1E765 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				680006C11F125DAD00809486 /* Assets.xcassets */,
 				680006C31F125DAD00809486 /* Info.plist */,
 				680006D01F1370CD00809486 /* FlightInterfaceController.swift */,
+				6829C6551F13B0E700330912 /* ScheduleInterfaceController.swift */,
+				6829C6571F13B35D00330912 /* FlightRowController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 					};
 					680006B71F125DAD00809486 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5N8N3DL9JE;
 						ProvisioningStyle = Automatic;
 					};
 					7B8FA2381B72275A00B1E765 = {
@@ -335,6 +342,8 @@
 			files = (
 				680006C01F125DAD00809486 /* ExtensionDelegate.swift in Sources */,
 				680006D11F1370CD00809486 /* FlightInterfaceController.swift in Sources */,
+				6829C6561F13B0E700330912 /* ScheduleInterfaceController.swift in Sources */,
+				6829C6581F13B35D00330912 /* FlightRowController.swift in Sources */,
 				680006CF1F12646400809486 /* Flight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +410,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 5N8N3DL9JE;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.AirAber.watchkitapp.watchkitextension;
@@ -421,6 +431,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 5N8N3DL9JE;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.AirAber.watchkitapp.watchkitextension;
@@ -598,6 +609,7 @@
 				680006C91F125DAD00809486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		680006CB1F125DAD00809486 /* Build configuration list for PBXNativeTarget "Watch" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +618,7 @@
 				680006CD1F125DAD00809486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B8FA2341B72275A00B1E765 /* Build configuration list for PBXProject "AirAber" */ = {
 			isa = XCConfigurationList;
