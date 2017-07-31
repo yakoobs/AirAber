@@ -1,2 +1,2 @@
-# AirAber
-Watch OS 3 test app
+# RxSwift
+RxSwift test app
