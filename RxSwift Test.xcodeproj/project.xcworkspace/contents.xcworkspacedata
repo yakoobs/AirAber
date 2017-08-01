@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AirAber.xcodeproj">
+      location = "self:/Users/kubasokolowski/Developer/AirAber/RxSwift Test.xcodeproj">
    </FileRef>
 </Workspace>
